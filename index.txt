@@ -22,7 +22,6 @@
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
 </style>
 <body>
 
@@ -67,7 +66,7 @@ body {font-size:16px;}
   <div class="w3-row-padding">
     <div class="w3-half">
       <img src="https://i.postimg.cc/FFqCvb6g/2nd-Truck.jpg" style="width:100%" onclick="onClick(this)" alt="Drone">
-
+  </div>
   </div>
 
   <!-- Modal for full size images on click-->
@@ -84,7 +83,7 @@ body {font-size:16px;}
     <h1 class="w3-xxxlarge w3-text-blue"><b>About</b></h1>
     <hr style="width:50px;border:5px solid blue" class="w3-round">
     <p>The Central Illinois Truck Show is hosted every year in Jacksonville, IL! We hope to see everyone there next year! The 2020 show date is TBA!</p>
-    <p>The Central Illinois Truck Show was founded in 2016 by Clint Stevens, Nick Rentschler and Quentin Reynolds. We have hosted 4 shows so far and have been involved in various community activities. We support any local car show and bring a group of trucks to every show that we can!
+    <p>The Central Illinois Truck Show was founded in 2016 by Clint Stevens, Nick Rentschler and Quentin Reynolds. We have hosted 4 shows so far. We support any local car show and bring a group of trucks to every show that we can! Our show looks to showcase any truck of any kind. No matter what you have, bring it out!
     </p>
   </div>
   
@@ -92,7 +91,7 @@ body {font-size:16px;}
   <div class="w3-container" id="Shows" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-blue"><b>Shows</b></h1>
     <hr style="width:50px;border:5px solid blue" class="w3-round">
-    <p>The 2020 show is TBA! Stay tuned!.</p>
+    <p>The 2020 show is TBA. Stay tuned!.</p>
     <p>
     </p>
   </div>
@@ -109,13 +108,13 @@ body {font-size:16px;}
   <div class="w3-container" id="Shirts" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-blue"><b>Shirts</b></h1>
     <hr style="width:50px;border:5px solid blue" class="w3-round">
-    <p>4th Annual Shirts - $20</p>
+    <p>4th Annual Shirts - $20 Sizes Available: Small, Large, XL, 2X, 4X </p>
     <a href="http://paypal.me/wrench8610/20"> <img src="https://i.postimg.cc/Fsgwq6Vq/4th-Show-Shirt.jpg" style="width:25%" alt="Drone"> </a>
-    <p>3rd Annual Shirts - $5</p>
+    <p>3rd Annual Shirts - $5 Sizes Available: Small (Black and White), Medium (Black Only), Large (Black and White), XL (Black only), 5X (White only)</p>
     <a href="http://paypal.me/wrench8610/5"><img src="https://i.postimg.cc/fRnvhWBT/3rd-Show-Proof-Black.jpg" style="width:25%" alt="3rd shirt"></a>
-    <p>2nd Annual Shirts - $5</p>
+    <p>2nd Annual Shirts - $5 Sizes Available: L, XL, 2XL</p>
     <a href="http://paypal.me/wrench8610/5"><img src="https://i.postimg.cc/0jSJtDgG/tshirt1.jpg" style="width:25%" alt="2nd shirt"></a>
-    <p>Truck Mafia Shirts - $5</p>
+    <p>Truck Mafia Shirts - $5 Sizes Available: Small (White only), Large (Grey and White) XL (Grey and White)</p>
     <a href="http://paypal.me/wrench8610/5"><img src="https://i.postimg.cc/FsmBjZXx/CIT-Mafia-Shirt.jpg" style="width:25%" alt="Mafia Shirt"></a>
     </p>
   </div>
@@ -162,7 +161,7 @@ function w3_close() {
 
 // Modal Image Gallery
 function onClick(element) {
-  document.getElementById("https://i.postimg.cc/FFqCvb6g/2nd-Truck.jpg").src = element.src;
+  document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
