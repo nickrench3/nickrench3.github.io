@@ -1,1 +1,161 @@
-Central IL Truck Show
+<!DOCTYPE html>
+<html lang="en">
+<title>Central Illinois Truck Show</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+<img src="https://i.postimg.cc/505zrVDR/central-il-truck-show-1.png" style="width:100%" onclick="onClick(this)" alt="Logo">
+    <h3 class="w3-padding-64"><b>Central Illinois<br>Truck Show</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#About" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
+    <a href="#Shows" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Shows</a> 
+    <a href="#Social Media" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Social Media</a> 
+    <a href="#Contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Central Illinois Truck Show</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="#">
+    <h1 class="w3-jumbo"><b>Central Illinois Truck Show</b></h1>
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Home.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="https://i.postimg.cc/505zrVDR/central-il-truck-show-1.png" style="width:100%" onclick="onClick(this)" alt="Logo">
+
+    <div class="w3-half">
+      <img src="https://i.postimg.cc/FFqCvb6g/2nd-Truck.jpg" style="width:100%" onclick="onClick(this)" alt="Drone">
+     </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="w3-container" id="About" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>About.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>The Central Illinois Truck Show is hosted every year in Jacksonville, IL! We hope to see everyone there next year! The 2020 show date is TBA!</p>
+    <p>The Central Illinois Truck Show was founded in 2016 by Clint Stevens, Nick Rentschler and Quentin Reynolds. We have hosted 4 shows so far and have been involved in various community activities. We support any local car show and bring a group of trucks to every show that we can!
+    </p>
+  </div>
+  
+  <!-- Shows -->
+  <div class="w3-container" id="Shows" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Shows.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>The 2020 show is TBA! Stay tuned!.</p>
+    <p>
+    </p>
+  </div>
+
+  <!-- Social Media -->
+  <div class="w3-container" id="Social Media" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Social Media.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    
+	<a href="http://facebook.com/centraliltruckshow" class="fa fa-facebook"></a>
+  </div>
+      
+  
+  <!-- Contact -->
+  <div class="w3-container" id="Contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form method="post" name="contact_form" action="mailto:nickrench3@icloud.com">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message"required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
+
