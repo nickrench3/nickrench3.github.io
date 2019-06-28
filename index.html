@@ -1,32 +1,280 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <title>Central Illinois Truck Show</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('https://i.postimg.cc/yxbH9y60/IMG-0394.png');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+ 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 </style>
 <body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+  <a href="#Home"> <img src="https://i.postimg.cc/505zrVDR/central-il-truck-show-1.png" style="width:100%"" alt="Logo"></a>
+    <h3 class="w3-padding-60">   </h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#Home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#About" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
+    <a href="#Shows" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Shows</a> 
+    <a href="#News" onclick="w3-close()" class="w3-bar-item w3-button w3-hover-white">News</a>
+    <a href="#Social Media" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Social Media</a> 
+    <a href="#Shirts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Shirts</a>
+    <a href="#FAQ" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">FAQ</a>
+    <a href="#Contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+
+<!-- Subscribe Button -->
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-black  w3-hover-opacity-off" style="padding:8px 85px; margin-top:60px";>SUBSCRIBE</button>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Central IL Truck Show</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="Home">
+    <h1 class="w3-xxxlarge"><b>Central Illinois Truck Show</b></h1>
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Home</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+  </div>
   
-  <div class="w3-display-middle" style="background-color:black">
-    <h1 class="w3-jumbo w3-animate-top ">COMING SOON!</h1>
-    
-      </div>  <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="http://centraliltruckshow.com" target="_blank">Central Illinois Truck Show</a>
-<div align=center><a href='https://www.counter12.com'><img src='https://www.counter12.com/img-64y35w7Z25a5Z31Z-26.gif' border='0' alt='estatisticas gratis'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=64y35w7Z25a5Z31Z'></script></div>  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-container">
+      <img src="https://i.postimg.cc/yxbH9y60/IMG-0394.png" style="display:block; margin-left:auto; margin-right:auto; margin-bottom:20px; width:500px; height:400px;" alt="Drone">
+  </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">X</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="w3-container" id="About" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>About</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>The Central Illinois Truck Show is hosted every year in Jacksonville, Illinois. The 	show features over 100 trucks, events including a show ‘n shine, dirt drags, 		burnout contests and a dyno. As well, various vendors display their products.</p>
+    <p>Come to the show and check out the custom pick up trucks from around the area. From 	old to new, there is a truck for everyone at this show. No matter what you have, 	bring it out! </p>
+  </div>
+  
+  <!-- Shows -->
+  <div class="w3-container" id="Shows" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Shows</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>The 2020 show is TBA. Stay tuned!</p>
+  </div>
+
+  <!-- News -->
+  <div class="w3-container" id="News" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>News</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <h3><b>2019 Central Illinois Truck Show</h3>
+    <p>       </p>
+    <h3>Best of Show Winner: Seth Bramwell</b></h3>
+    <p>Congrats to Seth who brought his 2016 Chevrolet Silverado to the 2019 Central Illinois Truck Show and walked away with the Best of Show award. Seth's truck will be featured on the 2020 Central Illinois Truck Show T-Shirt!</p>
+    <img src="https://i.postimg.cc/TYtjWCzK/seth.jpg" style="display:block; margin-left:auto; margin-right:auto; margin-bottom:20px; width:250px; height:300px;" alt="Seth"> 
+  </div>
+
+  <!-- Social Media -->
+  <div class="w3-container" id="Social Media" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Social Media</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <a href="https://facebook.com/centraliltruckshow" i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+	<a href="https://instagram.com/centraliltruckshow" i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://snapchat.com/add/truck_show" i class="fa fa-snapchat w3-hover-opacity"></i></a>
+  </div>
+
+  <!-- Shirts -->
+  <div class="w3-container" id="Shirts" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Shirts</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p><b>How to order: Click the picture of the shirt you would like, indicate the size 	you would like in the notes when purchasing. As well, this price includes 		shipping, please leave your address in 	the notes when purchasing!</b></p>
+    <p>4th Annual Shirts - $25 </p>
+    <p>Sizes Available: Small, Large, XL, 2X, 4X </p>
+    <a href="https://paypal.me/wrench8610/25"> <img src="https://i.postimg.cc/DwZvSNHw/IMG-4718.jpg" style="width:400px; margin-bottom:100px; height:400px" alt="Drone"> </a>
+    <p>3rd Annual Shirts - $10 </p>
+    <p> Sizes Available: Small (Black or White), Medium (Black Only), Large (Black or White), XL (Black only), 5X (White only)</p>
+    <a href="https://paypal.me/wrench8610/10"><img src="https://i.postimg.cc/fRnvhWBT/3rd-Show-Proof-Black.jpg" style="width:400px; margin-bottom:100px; height:300px" alt="3rd shirt"></a>
+    <p>2nd Annual Shirts - $10 </p>
+    <p>Sizes Available: L, XL, 2XL</p>
+    <a href="https://paypal.me/wrench8610/10"><img src="https://i.postimg.cc/0jSJtDgG/tshirt1.jpg" style="width:400px; margin-bottom:100px; height:300px" alt="2nd shirt"></a>
+    <p>Truck Mafia Shirts - $10 </p>
+    <p>Sizes Available: Small (White only), Large (Grey or White) XL (Grey or White)</p>
+    <a href="https://paypal.me/wrench8610/10"><img src="https://i.postimg.cc/FsmBjZXx/CIT-Mafia-Shirt.jpg" style="width:400px; margin-bottom:20px; height:300px" alt="Mafia Shirt"></a>
+  </div>
+
+ <!-- FAQ -->
+ <div class="w3-container" id="FAQ" style="margin-top:75px">
+   <h1 class="w3-xxxlarge w3-text-blue"><b>FAQ</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <button class="accordion">What classes can I enter?</button>
+	<div class="panel">
+  	<p>Best of Show, People's Choice, Mayor's Choice, Queen's Choice, Furthest Traveled, Best Female Truck, Stock, Classic '89 and below, Lifted, Lowered, Jeep, SUV, Sinister and rat rod. </p>
+	</div>
+
+	<button class="accordion">How is the show judged?</button>
+	<div class="panel">
+ 	 <p>The show is a people's choice judged show.</p>
+	</div>
+
+	<button class="accordion">How much is it to enter?</button>
+	<div class="panel">
+ 	 <p>$5 entry fee at the gate is your admission to show your truck.</p>
+	</div>
+  </div>
+  <!-- Contact -->
+  <div class="w3-container" id="Contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Contact</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>Do you have a question about the show? Fill out this form and send us an email!</p>
+   <form action="https://mailthis.to/nickrench3@gmail.com" method="POST" />
+     <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+     </div>
+     <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+     </div>
+     <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+     </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+
+<!-- Subscribe modal -->
+
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <span onclick="document.getElementById('id01').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+
+      <h1 class="w3-wide">Subscribe to our newsletter</h1>
+      <form action="https://mailthis.to/nickrench3@gmail.com" method="POST" />
+        <input class="w3-input w3-border" type="text" placeholder="Email" name="Email for Subscription">
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom" >Send Message</button>
+    </div>
+  </div>
 </div>
+</form>
+
+<!-- End page content -->
 </div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+<p class="w3-right">Powered by <a href="http://facebook.com/centraliltruckshow" title="Central Illinois Truck Show" target="_blank" class="w3-hover-opacity">Central Illinois Truck Show</a></p>
+</div>
+
+
+<div align=center><a href='https://www.counter12.com'><img src='https://www.counter12.com/img-A895a22cCwDacW57-26.gif' border='0' alt='free web counter'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=A895a22cCwDacW57'></script></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+
+</script>
+
 </body>
 </html>
 
