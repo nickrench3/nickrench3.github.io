@@ -81,7 +81,7 @@ body {font-size:16px;}
     <a href="#Contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
 
 <!-- Subscribe Button -->
-  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-black  w3-hover-opacity-off" style="padding:8px 85px; margin-top:60px";>SUBSCRIBE</button>
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-black w3-hover-white" style="padding:8px 85px; margin-top:60px";>SUBSCRIBE</button>
   </div>
 </nav>
 
@@ -143,7 +143,7 @@ body {font-size:16px;}
     <p>       </p>
     <h3>Best of Show Winner: Seth Bramwell</b></h3>
     <p>Congrats to Seth who brought his 2016 Chevrolet Silverado to the 2019 Central Illinois Truck Show and walked away with the Best of Show award. Seth's truck will be featured on the 2020 Central Illinois Truck Show T-Shirt!</p>
-    <img src="https://i.postimg.cc/TYtjWCzK/seth.jpg" style="display:block; margin-left:auto; margin-right:auto; margin-bottom:20px; width:250px; height:300px;" alt="Seth"> 
+	<img src="https://i.postimg.cc/TYtjWCzK/seth.jpg" style="display:block; margin-left:auto; margin-right:auto; margin-bottom:20px; width:250px; height:300px;" alt="Seth"> 
   </div>
 
   <!-- Social Media -->
@@ -175,25 +175,32 @@ body {font-size:16px;}
   </div>
 
  <!-- FAQ -->
- <div class="w3-container" id="FAQ" style="margin-top:75px">
+<hr>
+<div class="w3-container" id="FAQ" style="margin-top:75px">
    <h1 class="w3-xxxlarge w3-text-blue"><b>FAQ</b></h1>
     <hr style="width:50px;border:5px solid blue" class="w3-round">
-    <button class="accordion">What classes can I enter?</button>
-	<div class="panel">
-  	<p>Best of Show, People's Choice, Mayor's Choice, Queen's Choice, Furthest Traveled, Best Female Truck, Stock, Classic '89 and below, Lifted, Lowered, Jeep, SUV, Sinister and rat rod. </p>
-	</div>
 
-	<button class="accordion">How is the show judged?</button>
-	<div class="panel">
- 	 <p>People's Choice Show.</p>
-	</div>
+<div class="w3-bar w3-theme">
+   <button class="w3-bar-item w3-button testbtn w3-padding-16 w3-hover-blue" onclick="openFAQ(event,'Classes')">What classes can I enter?</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16 w3-hover-blue" onclick="openFAQ(event,'Judge')">How is the show judged?</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16 w3-hover-blue" onclick="openFAQ(event,'Price')">How much is it to enter?</button>
+</div>
 
-	<button class="accordion">How much is it to enter?</button>
-	<div class="panel">
- 	 <p>$5 entry fee at the gate is your admission to show your truck.</p>
-	</div>
-  </div>
-  <!-- Contact -->
+<div id="Classes" class="w3-container city w3-animate-opacity">
+  <p>Best of Show, People's Choice, Mayor's Choice, Queen's Choice, Furthest Traveled, Best Female Truck, </p>
+  <p>Stock, Classic '89 and below, Lifted, Lowered, Jeep, SUV, Sinister and rat rod.</p>
+</div>
+
+<div id="Judge" class="w3-container city w3-animate-opacity">
+  <p>People's Choice Show.</p>
+</div>
+
+<div id="Price" class="w3-container city w3-animate-opacity">
+  <p>$5 entry fee at the gate is your admission to show your truck.</p>
+</div>
+</div>
+
+ <!-- Contact -->
   <div class="w3-container" id="Contact" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-blue"><b>Contact</b></h1>
     <hr style="width:50px;border:5px solid blue" class="w3-round">
@@ -211,7 +218,7 @@ body {font-size:16px;}
         <label>Message</label>
         <input class="w3-input w3-border" type="text" name="Message" required>
      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Message</button>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom w3-hover-blue">Send Message</button>
     </form>  
   </div>
 
@@ -253,6 +260,23 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
 }
+// Script for Tab FAQ
+function openFAQ(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+    activebtn[i].className = activebtn[i].className.replace(" w3-blue", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-blue";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click();
 
 // Modal Image Gallery
 function onClick(element) {
