@@ -65,7 +65,7 @@ body {font-size:16px;}
 </style>
 <body>
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-orange w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
   <a href=index.html> <img src="https://i.postimg.cc/505zrVDR/central-il-truck-show-1.png" style="width:100%"" alt="Logo"></a>
@@ -87,8 +87,8 @@ body {font-size:16px;}
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+<header class="w3-container w3-top w3-hide-large w3-orange w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-orange w3-margin-right" onclick="w3_open()">☰</a>
   <span>Central IL Truck Show</span>
 </header>
 
@@ -100,8 +100,8 @@ body {font-size:16px;}
 
 <!-- News -->
   <div class="w3-container" id="News" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-blue"><b>News</b></h1>
-    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <h1 class="w3-xxxlarge w3-text-orange"><b>News</b></h1>
+    <hr style="width:50px;border:5px solid orange" class="w3-round">
     <h3><b>2019 Central Illinois Truck Show</h3>
     <p>       </p>
     <h3>Best of Show Winner: Seth Bramwell</b></h3>
@@ -119,7 +119,7 @@ body {font-size:16px;}
       <h1 class="w3-wide">Subscribe to our newsletter</h1>
       <form action="https://mailthis.to/centraliltruckshow@gmail.com" method="POST" />
         <input class="w3-input w3-border" type="text" placeholder="Email" name="Email for Subscription">
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom" >Send Message</button>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-orange w3-margin-bottom" >Send Message</button>
     </div>
   </div>
 </div>
@@ -148,10 +148,10 @@ function openFAQ(evt, cityName) {
   }
   var activebtn = document.getElementsByClassName("testbtn");
   for (i = 0; i < x.length; i++) {
-    activebtn[i].className = activebtn[i].className.replace(" w3-blue", "");
+    activebtn[i].className = activebtn[i].className.replace(" w3-orange", "");
   }
   document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " w3-blue";
+  evt.currentTarget.className += " w3-orange";
 }
 
 var mybtn = document.getElementsByClassName("testbtn")[0];
