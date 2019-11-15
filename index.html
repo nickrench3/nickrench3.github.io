@@ -21,7 +21,7 @@
 <link REL="stylesheet" type="text/css" href="style.css">
 <body>
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-orange w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-deep-orange w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
   <a href=index.html> <img src="images/logo.jpg" style="width:100%"" alt="Logo"></a>
@@ -44,8 +44,8 @@
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-orange w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-orange w3-margin-right" onclick="w3_open()">☰</a>
+<header class="w3-container w3-top w3-hide-large w3-deep-orange w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-deep-orange w3-margin-right" onclick="w3_open()">☰</a>
   <span>Central IL Truck Show</span>
 </header>
 
@@ -58,8 +58,8 @@
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="Home">
     <h1 class="w3-xxxlarge"><b>Central Illinois Truck Show</b></h1>
-    <h1 class="w3-xxxlarge w3-text-orange"><b>Home</b></h1>
-    <hr style="width:50px;border:5px solid orange" class="w3-round">
+    <h1 class="w3-xxxlarge w3-text-deep-orange"><b>Home</b></h1>
+    <hr style="width:50px;border:5px solid deep-orange" class="w3-round">
   </div>
 
   <!-- Photo grid (modal) -->
@@ -81,13 +81,13 @@
  <!-- FAQ -->
 <hr>
 <div class="w3-container" id="FAQ" style="margin-top:75px">
-   <h1 class="w3-xxxlarge w3-text-orange"><b>FAQ</b></h1>
-    <hr style="width:50px;border:5px solid orange" class="w3-round">
+   <h1 class="w3-xxxlarge w3-text-deep-orange"><b>FAQ</b></h1>
+    <hr style="width:50px;border:5px solid deep-orange" class="w3-round">
 
 <div class="w3-bar w3-theme">
-   <button class="w3-bar-item w3-button testbtn w3-padding-16 w3-hover-orange" onclick="openFAQ(event,'Classes')">What classes can I enter?</button>
-  <button class="w3-bar-item w3-button testbtn w3-padding-16 w3-hover-orange" onclick="openFAQ(event,'Judge')">How is the show judged?</button>
-  <button class="w3-bar-item w3-button testbtn w3-padding-16 w3-hover-orange" onclick="openFAQ(event,'Price')">How much is it to enter?</button>
+   <button class="w3-bar-item w3-button testbtn w3-padding-16 w3-hover-deep-orange" onclick="openFAQ(event,'Classes')">What classes can I enter?</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16 w3-hover-deep-orange" onclick="openFAQ(event,'Judge')">How is the show judged?</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16 w3-hover-deep-orange" onclick="openFAQ(event,'Price')">How much is it to enter?</button>
 </div>
 
 <div id="Classes" class="w3-container city w3-light-grey">
@@ -106,8 +106,8 @@
 
  <!-- Contact -->
   <div class="w3-container" id="Contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-orange"><b>Contact</b></h1>
-    <hr style="width:50px;border:5px solid orange" class="w3-round">
+    <h1 class="w3-xxxlarge w3-text-deep-orange"><b>Contact</b></h1>
+    <hr style="width:50px;border:5px solid deep-orange" class="w3-round">
     <p>Do you have a question about the show? Fill out this form and send us an email!</p>
    <form action="https://mailthis.to/centraliltruckshow@gmail.com" method="POST" />
      <div class="w3-section">
@@ -122,7 +122,7 @@
         <label>Message</label>
         <input class="w3-input w3-border" type="text" name="Message" required>
      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-orange w3-margin-bottom w3-hover-orange">Send Message</button>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-deep-orange w3-margin-bottom w3-hover-deep-orange">Send Message</button>
     </form>
   </div>
 
@@ -138,7 +138,7 @@
       <h1 class="w3-wide">Subscribe to our newsletter</h1>
       <form action="https://mailthis.to/centraliltruckshow@gmail.com" method="POST" />
         <input class="w3-input w3-border" type="text" placeholder="Email" name="Email for Subscription">
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-orange w3-margin-bottom" >Send Message</button>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-deep-orange w3-margin-bottom" >Send Message</button>
     </div>
   </div>
 </div>
@@ -172,10 +172,10 @@ function openFAQ(evt, cityName) {
   }
   var activebtn = document.getElementsByClassName("testbtn");
   for (i = 0; i < x.length; i++) {
-    activebtn[i].className = activebtn[i].className.replace(" w3-orange", "");
+    activebtn[i].className = activebtn[i].className.replace(" w3-deep-orange", "");
   }
   document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " w3-orange";
+  evt.currentTarget.className += " w3-deep-orange";
 }
 var mybtn = document.getElementsByClassName("testbtn")[0];
 mybtn.click();
