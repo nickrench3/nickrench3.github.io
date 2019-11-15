@@ -6,7 +6,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-144652749-1');
 </script>
 <LINK REL="SHORTCUT ICON" HREF="images/logo.jpg">
@@ -15,14 +14,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <title>Central Illinois Truck Show</title>
-<meta name="description" content="The Central Illinois Truck Show is hosted every year in Jacksonville, Illinois. >
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link REL="stylesheet" type="text/css" href="style.css">
-
 <body>
-
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-orange w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
@@ -162,7 +159,6 @@ function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
   document.getElementById("myOverlay").style.display = "block";
 }
-
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
@@ -181,10 +177,8 @@ function openFAQ(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " w3-orange";
 }
-
 var mybtn = document.getElementsByClassName("testbtn")[0];
 mybtn.click();
-
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -192,16 +186,13 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-
 var acc = document.getElementsByClassName("accordion");
 var i;
-
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     /* Toggle between adding and removing the "active" class,
     to highlight the button that controls the panel */
     this.classList.toggle("active");
-
     /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
@@ -211,8 +202,6 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-
-
 </script>
 
 </body>
