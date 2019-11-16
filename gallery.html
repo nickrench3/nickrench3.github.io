@@ -13,7 +13,7 @@
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 23.5%;
+  width: 31%;
   display: none; /* Hide all elements by default */
 }
 /* The "show" class is added to the filtered elements */
@@ -341,7 +341,7 @@ function w3RemoveClass(element, name) {
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
   }
   element.className = arr1.join(" ");
