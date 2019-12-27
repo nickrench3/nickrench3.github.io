@@ -31,7 +31,7 @@
     <a href=index.html onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
     <a href=about.html onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
     <a href=shows.html onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Shows</a>
-	<!--<a href=registration.html onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Registration</a> -->
+	<a href=registration.html onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Registration</a>
     <a href=gallery.html onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gallery</a>
     <a href=news.html onclick="w3-close()" class="w3-bar-item w3-button w3-hover-white">News</a>
     <a href=shirts.html onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Shirts</a>
@@ -58,15 +58,42 @@
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-<!-- News -->
-  <div class="w3-container" id="News" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-green"><b>News</b></h1>
+<!-- Registration -->
+  <div class="w3-container" id="About" style="margin-top:100px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Registration</b></h1>
     <hr style="width:50px;border:5px solid green" class="w3-round">
-    <h3><b>2019 Central Illinois Truck Show</h3>
-    <p>       </p>
-    <h3>Best of Show Winner: Seth Bramwell</b></h3>
-    <p>Congrats to Seth who brought his 2016 Chevrolet Silverado to the 2019 Central Illinois Truck Show and walked away with the Best of Show award. Seth's truck will be featured on the 2020 Central Illinois Truck Show T-Shirt!</p>
-	<img src="images/seth.jpg" style="display:block; margin-left:auto; margin-right:auto; margin-bottom:20px; width:auto; height:auto;" alt="Seth">
+    <p>Fill out and submit this form to be pre-registered for the show!</p>
+    <form action="https://mailthis.to/centraliltruckshow@gmail.com" method="POST" />
+     <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+     </div>
+     <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+     </div>
+	 <div class="w3-section">
+        <label>Phone Number</label>
+        <input class="w3-input w3-border" type="text" name="Phone" required>
+     </div>
+	 <div class="w3-section">
+        <label>Year of Truck</label>
+        <input class="w3-input w3-border" type="text" name="Year" required>
+     </div>
+	 <div class="w3-section">
+        <label>Make and Model</label>
+        <input class="w3-input w3-border" type="text" name="Make" required>
+     </div>
+	 <div class="w3-section">
+        <label>City</label>
+        <input class="w3-input w3-border" type="text" name="City" required>
+     </div>
+	 <div class="w3-section">
+        <label>State</label>
+        <input class="w3-input w3-border" type="text" name="State" required>
+     </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-green w3-margin-bottom w3-hover-green">Submit</button>
+    </form>
   </div>
 
 <!-- Subscribe modal -->
@@ -75,6 +102,7 @@
     <div class="w3-container w3-white w3-center">
       <span onclick="document.getElementById('id01').style.display='none'"
       class="w3-button w3-display-topright">&times;</span>
+
       <h1 class="w3-wide">Subscribe to our newsletter</h1>
       <form action="https://mailthis.to/centraliltruckshow@gmail.com" method="POST" />
         <input class="w3-input w3-border" type="text" placeholder="Email" name="Email for Subscription">
@@ -110,7 +138,7 @@ function openFAQ(evt, cityName) {
     activebtn[i].className = activebtn[i].className.replace(" w3-green", "");
   }
   document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " w3-green";
+  evt.currentTarget.className += " w3-orange";
 }
 
 var mybtn = document.getElementsByClassName("testbtn")[0];
