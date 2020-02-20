@@ -21,7 +21,7 @@
 
 <body>
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-teal w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
   <a href=index.html> <img src="images/logo.jpg" style="width:100%"" alt="Logo"></a>
@@ -47,8 +47,8 @@
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-teal w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-teal w3-margin-right" onclick="w3_open()">☰</a>
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
   <span>Central IL Truck Show</span>
 </header>
 
@@ -60,8 +60,8 @@
 
 <!-- Shirts -->
   <div class="w3-container" id="Shirts" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-teal"><b>Shirts</b></h1>
-    <hr style="width:50px;border:5px solid teal" class="w3-round">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Shirts</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
     <p><b>How to order: Click the picture of the shirt you would like.</b></p>
     <p><b>4th Annual Shirts - $25 </b></p>
 	<p> *Please indicate the size of the shirt and your shipping address in the notes when placing an order. </p>
@@ -90,7 +90,7 @@
       <h1 class="w3-wide">Subscribe to our newsletter</h1>
       <form action="https://mailthis.to/centraliltruckshow@gmail.com" method="POST" />
         <input class="w3-input w3-border" type="text" placeholder="Email" name="Email for Subscription">
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-teal w3-margin-bottom" >Send Message</button>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom" >Send Message</button>
     </div>
   </div>
 </div>
@@ -119,10 +119,10 @@ function openFAQ(evt, cityName) {
   }
   var activebtn = document.getElementsByClassName("testbtn");
   for (i = 0; i < x.length; i++) {
-    activebtn[i].className = activebtn[i].className.replace(" w3-teal", "");
+    activebtn[i].className = activebtn[i].className.replace(" w3-blue", "");
   }
   document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " w3-teal";
+  evt.currentTarget.className += " w3-blue";
 }
 
 var mybtn = document.getElementsByClassName("testbtn")[0];
