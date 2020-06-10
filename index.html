@@ -85,19 +85,19 @@
    <button class="w3-bar-item w3-button faqbtn w3-padding-16 w3-hover-blue" onclick="openFAQ(event,'Location')">Where is the show held?</button>
 </div>
 
-<div id="Classes" class="w3-container city w3-light-grey">
+<div id="Classes" class="w3-container faq w3-light-grey">
   <p>Best of Show, People's Choice, Mayor's Choice, Queen's Choice, Furthest Traveled, Best Female Truck, </p>
   <p>Stock, Classic '89 and below, Lifted, Lowered, Jeep, SUV, Sinister and rat rod.</p>
 </div>
 
-<div id="Judge" class="w3-container city w3-light-grey">
+<div id="Judge" class="w3-container faq w3-light-grey">
   <p>People's Choice Show.</p>
 </div>
 
-<div id="Price" class="w3-container city w3-light-grey">
+<div id="Price" class="w3-container faq w3-light-grey">
   <p>$5 entry fee at the gate is your admission to show your truck.</p>
 </div>
-<div id="Location" class="w3-container city w3-light-grey">
+<div id="Location" class="w3-container faq w3-light-grey">
   <p>The show is held at the Morgan County Fairgrounds in Jacksonville, IL.</p>
 </div>
 </div>
@@ -144,9 +144,9 @@ function w3_close() {
   document.getElementById("myOverlay").style.display = "none";
 }
 // Script for Tab FAQ
-function openFAQ(evt, cityName) {
+function openFAQ(evt, menuName) {
   var i;
-  var x = document.getElementsByClassName("city");
+  var x = document.getElementsByClassName("faq");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
@@ -154,7 +154,7 @@ function openFAQ(evt, cityName) {
   for (i = 0; i < x.length; i++) {
     activebtn[i].className = activebtn[i].className.replace(" w3-blue", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(menuName).style.display = "block";
   evt.currentTarget.className += " w3-blue";
 }
 var mybtn = document.getElementsByClassName("faqbtn")[0];
