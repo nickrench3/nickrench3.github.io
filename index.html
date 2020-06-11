@@ -85,19 +85,19 @@
    <button class="w3-bar-item w3-button faqbtn w3-padding-16 w3-hover-blue" onclick="openFAQ(event,'Location')">Where is the show held?</button>
 </div>
 
-<div id="Classes" class="w3-container faq w3-light-grey">
+<div id="Classes" class="w3-container city w3-light-grey">
   <p>Best of Show, People's Choice, Mayor's Choice, Queen's Choice, Furthest Traveled, Best Female Truck, </p>
   <p>Stock, Classic '89 and below, Lifted, Lowered, Jeep, SUV, Sinister and rat rod.</p>
 </div>
 
-<div id="Judge" class="w3-container faq w3-light-grey">
+<div id="Judge" class="w3-container city w3-light-grey">
   <p>People's Choice Show.</p>
 </div>
 
-<div id="Price" class="w3-container faq w3-light-grey">
+<div id="Price" class="w3-container city w3-light-grey">
   <p>$5 entry fee at the gate is your admission to show your truck.</p>
 </div>
-<div id="Location" class="w3-container faq w3-light-grey">
+<div id="Location" class="w3-container city w3-light-grey">
   <p>The show is held at the Morgan County Fairgrounds in Jacksonville, IL.</p>
 </div>
 </div>
@@ -106,7 +106,23 @@
   <div class="w3-container" id="Contact" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-blue"><b>Contact</b></h1>
     <hr style="width:50px;border:5px solid blue" class="w3-round">
-	<p>Do you have a question about the show? Email us at <a href="mailto:contact@centraliltruckshow.com">contact@centraliltruckshow.com</p>
+    <p>Do you have a question about the show? Email us at <a href="mailto:contact@centraliltruckshow.com">contact@centraliltruckshow.com</p>
+    <form action="https://usebasin.com/f/04102c5d2fcf" method="POST" />
+     <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" requiblue>
+     </div>
+     <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" requiblue>
+     </div>
+     <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" requiblue>
+     </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom w3-hover-blue">Send Message</button>
+    </form>
+
   </div>
 
 
@@ -133,34 +149,7 @@
   <p class="w3-right">Powered by <a href="http://facebook.com/centraliltruckshow" title="Central Illinois Truck Show" target="_blank" class="w3-hover-opacity">Central Illinois Truck Show</a></p>
 </div>
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-// Script for Tab FAQ
-function openFAQ(evt, menuName) {
-  var i;
-  var x = document.getElementsByClassName("faq");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  var activebtn = document.getElementsByClassName("faqbtn");
-  for (i = 0; i < x.length; i++) {
-    activebtn[i].className = activebtn[i].className.replace(" w3-blue", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.className += " w3-blue";
-}
-var mybtn = document.getElementsByClassName("faqbtn")[0];
-mybtn.click();
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
