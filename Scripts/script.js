@@ -18,10 +18,10 @@ function openFAQ(evt, cityName) {
   }
   var activebtn = document.getElementsByClassName("faqbtn");
   for (i = 0; i < x.length; i++) {
-    activebtn[i].className = activebtn[i].className.replace(" w3-blue", "");
+    activebtn[i].className = activebtn[i].className.replace(" w3-green", "");
   }
   document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " w3-blue";
+  evt.currentTarget.className += " w3-green";
 }
 var mybtn = document.getElementsByClassName("faqbtn")[0];
 mybtn.click();
