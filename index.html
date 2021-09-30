@@ -16,125 +16,31 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link REL="stylesheet" type="text/css" href="CSS/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('images/main.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
 <body>
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
-  <a href=index.html> <img src="images/logo.jpg" style="width:100%"" alt="Logo"></a>
-    <h3 class="w3-padding-60">   </h3>
-  </div>
-  <div class="w3-bar-block">
-    <a href=./index.html onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-    <a href=Pages/about.html onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
-    <a href=Pages/shows.html onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Shows</a>
-	<!--<a href=registration.html onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Registration</a> -->
-    <a href=Pages/gallery.html onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Truck Gallery</a>
-    <a href=Pages/news.html onclick="w3-close()" class="w3-bar-item w3-button w3-hover-white">News</a>
-	<a href=Pages/slideshow.html onclick="w3-close()" class="w3-bar-item w3-button w3-hover-white">Slideshow</a>
-    <a href=Pages/shirts.html onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Shirts</a>
-    <a href="index.html#FAQ" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">FAQ</a>
-    <a href="index.html#Contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
-
-<!-- Subscribe Button -->
-  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-black w3-hover-white" style="padding:8px 85px; margin-top:60px";>SUBSCRIBE</button>
-  <a href="https://facebook.com/centraliltruckshow" target="_blank" i class="fa fa-facebook-official"></i></a>
-  <a href="https://instagram.com/centraliltruckshow" target="_blank" i class="fa fa-instagram"></i></a>
-  <a href="https://snapchat.com/add/truck_show" target="_blank" i class="fa fa-snapchat w3-hover-opacity"></i></a>
-  </div>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Central IL Truck Show</span>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
-
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:50px" id="Home">
-    <h1 class="w3-xxxlarge"><b>Central Illinois Truck Show</b></h1>
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Home</b></h1>
-    <hr style="width:50px;border:5px solid blue" class="w3-round">
-  </div>
-
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-container">
-      <img src="images/main.jpg" style="display:block; margin-left:auto; margin-right:auto; margin-bottom:20px; width:auto; height:auto;" alt="Drone">
-  </div>
-  </div>
-
- <!-- FAQ -->
-<div class="w3-container" id="FAQ" style="margin-top:75px">
-   <h1 class="w3-xxxlarge w3-text-blue"><b>FAQ</b></h1>
-   <hr style="width:50px;border:5px solid blue" class="w3-round">
-
-<div class="w3-bar w3-theme">
-   <button class="w3-bar-item w3-button faqbtn w3-padding-16 w3-hover-blue" onclick="openFAQ(event,'Classes')">What classes can I enter?</button>
-   <button class="w3-bar-item w3-button faqbtn w3-padding-16 w3-hover-blue" onclick="openFAQ(event,'Judge')">How is the show judged?</button>
-   <button class="w3-bar-item w3-button faqbtn w3-padding-16 w3-hover-blue" onclick="openFAQ(event,'Price')">How much is it to enter?</button>
-   <button class="w3-bar-item w3-button faqbtn w3-padding-16 w3-hover-blue" onclick="openFAQ(event,'Location')">Where is the show held?</button>
-   <button class="w3-bar-item w3-button faqbtn w3-padding-16 w3-hover-blue" onclick="openFAQ(event,'Show')">Will there be a show in 2021?</button>
-</div>
-
-<div id="Classes" class="w3-container city w3-light-grey">
-  <p>Best of Show, People's Choice, Mayor's Choice, Queen's Choice, Furthest Traveled, Best Female Truck, </p>
-  <p>Stock, Classic '89 and below, Lifted, Lowered, Jeep, SUV, Sinister and rat rod.</p>
-</div>
-
-<div id="Judge" class="w3-container city w3-light-grey">
-  <p>People's Choice Show.</p>
-</div>
-
-<div id="Price" class="w3-container city w3-light-grey">
-  <p>$5 entry fee at the gate is your admission to show your truck.</p>
-</div>
-<div id="Location" class="w3-container city w3-light-grey">
-  <p>The show is held at the Morgan County Fairgrounds in Jacksonville, IL.</p>
-</div>
-<div id="Show" class="w3-container city w3-light-grey">
-  <p>Look for information regarding the 2021 show soon!</p>
-</div>
-</div>
-
- <!-- Contact -->
-  <div class="w3-container" id="Contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Contact</b></h1>
-    <hr style="width:50px;border:5px solid blue" class="w3-round">
-    <p>Do you have a question about the show? Email us at <a href="mailto:contact@centraliltruckshow.com">contact@centraliltruckshow.com</a></p>
-  </div>
-
-
-<!-- Subscribe modal -->
-
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
-    <div class="w3-container w3-white w3-center">
-      <span onclick="document.getElementById('id01').style.display='none'"
-      class="w3-button w3-display-topright">&times;</span>
-      <h1 class="w3-wide">Subscribe to our newsletter</h1>
-      <form action="https://formspree.io/f/centraliltruckshow@gmail.com" method="POST" />
-        <input class="w3-input w3-border" type="text" id="Email" placeholder="Email" name="Email for Subscription">
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom" >Send Message</button>
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+      Central Illinois Truck Show
+    </div>
+    <div class="w3-display-middle">
+      <h1 class="w3-jumbo w3-animate-top w3-padding-large w3-grey w3-xlarge w3-wide w3-animate-opacity">COMING SOON</h1>
     </div>
   </div>
-</div>
-</form>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="http://facebook.com/centraliltruckshow" title="Central Illinois Truck Show" target="_blank">Central Illinois Truck Show</a>
+  </div>
 
 <!-- End page content -->
-
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;margin-bottom:20px;padding-right:58px">
-  <p class="w3-right">Powered by <a href="http://facebook.com/centraliltruckshow" title="Central Illinois Truck Show" target="_blank" class="w3-hover-opacity">Central Illinois Truck Show</a></p>
-</div>
 
 <script src="Scripts/script.js"></script>
 
